@@ -1,3 +1,6 @@
+<?php   
+ session_start();  
+ ?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,45 +49,20 @@
 <body>
 
 <!-- Cabeçalho -->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="home.html">sospet</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="home.html">Home</a></li>
-        <li><a href="#">Perfil</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-       <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
-       <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#myModal">ENTRAR</button>
-      </ul>
-    </div>
-  </div>
-</nav>
+ <?php include("cabecalho.php"); ?>
   
 <div class="container-fluid text-center">    
   <div class="row content">
-  
- 
     
       <!-- Centro -->
     <div class="col-sm-12 text-left"> 
       <center><h1>Serviços</h1></center>
-     
-      <hr>
-       
+      
+      <?php $Uvisita= filter_input(INPUT_COOKIE,"uVisita"); ?>      
+      <h3>Sua ultima visita foi em: <?php echo $Uvisita; ?></h3>      
+      <hr>       
+      
     </div>
-    
- 
   </div>
 </div>
 
