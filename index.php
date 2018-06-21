@@ -1,5 +1,6 @@
 <?php   
  session_start();
+ $x = "teste";
  ?>  
 <!DOCTYPE html>
 <html lang="PT-BR">
@@ -52,20 +53,17 @@
         <?php include("cabecalho.php"); ?>
            <br />  
            <div class="container" style="width:700px;">  
-             
+             <!--teste de pasta wamp -->
                 <?php  
                 if(isset($_SESSION['username']))  
                 {  
                 ?>  
                 <div align="center">  
-                     <h1>Welcome - <?php echo $_SESSION['username']; ?></h1><br />  
-                <?php     echo $_SESSION['username']; ?>
+                        <h1>Welcome - <?php echo $_SESSION['username']; ?></h1><br />  
+                      
                 </div>  
                 <?php  
-                }   
-                else  
-                {  
-                echo "<h1>Faça o Login!!<h1/>";
+                } else { echo "<h1>Faça o Login!!<h1/>";
                 }  
                 ?>  
            </div>  
