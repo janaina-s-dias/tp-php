@@ -1,8 +1,13 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <title>Sistema SOS PET</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <?php include("cabecalho.php"); ?>
   <body>
@@ -48,8 +53,25 @@
             echo "<tr>";
           }
         ?>
-    </table>
+    </table>        
     </center>
+<hr>
+    
+    <?php
+    $z = "Andre Martins";
+    if(isset($_SESSION['username'])==$z)  
+                {                  
+                include_once("upload/FormUploadCliente.php");
+                ?>      
+                
+                <?php  
+                } else { echo ";)";
+                  var_dump($_SESSION);
+                }  
+                var_dump($_SESSION);
+                var_dump($z);
+                ?>
+                
     <?php include_once("footer.php");?>
 <!-- <footer>
 <br/><br/><br/><br/>
@@ -58,4 +80,11 @@
 <br/><br/><br/><br/>
 <center><p> sospet. desenvolvido por AJ2P. 2018 </p></center>
 </footer> -->
+<script>
+$(document).ready(function(){
+        $("#logout").hide();
+        });
+
+
+</script>
 </html>
