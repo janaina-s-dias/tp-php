@@ -1,11 +1,11 @@
-   
-   <div class="form-group">
-      <label for="ID">ID</label>
-        <input type="number" class="form-control"  name="ID" value="<?= $id ?>" required />
-       
-      </div>
-
-      <div class="form-group">
+<div class="form-group">
+    <label for="ID">ID </label>
+<?php if(isset($id) && $id > 0){?>
+        <input type="number" class="form-control" name="ID" value="<?= $id ?>" disabled />
+<?php } else {?>
+        <input type="number" class="form-control" name="ID" value="<?= $id ?>" required />
+<?php }?>
+</div>      <div class="form-group">
       <label for="DA">Data</label>
       <?php 
         date_default_timezone_set('America/Sao_Paulo');
