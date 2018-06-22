@@ -1,8 +1,3 @@
-<?php   
- session_start();
- 
- ?>  
-
 <?php
   $tamanhoPagina=5;
   $inicioPagina=0;
