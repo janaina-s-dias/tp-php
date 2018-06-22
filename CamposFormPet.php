@@ -1,14 +1,11 @@
-<?php if(!isset($do)){?>
     <div class="form-group">
       <label for="ID">ID </label>
-      <input type="number" class="form-control" name="ID" value="<?= $id ?>" disabled="" />
-   </div>
+<?php if(isset($id) && $id > 0){?>
+    <input type="number" class="form-control" name="ID" value="<?= $id ?>" disabled />
 <?php } else {?>
-    <div class="form-group">
-      <label for="ID">ID </label>
-      <input type="number" class="form-control" name="ID" value="<?= $id ?>" disabled="" />
-   </div>
+    <input type="number" class="form-control" name="ID" value="<?= $id ?>" required />
 <?php }?>
+    </div>
   <div class="form-group">
       <label for="NM" >Nome </label>
         <input type="text"  class=" form-control" name="NM" value="<?= $nm ?>" required/>
