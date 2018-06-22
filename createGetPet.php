@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>CRUD</title>
+    <title>Sistema SOS PET</title>
   </head>
   <?php include("cabecalho.php"); ?>
   <body>
@@ -25,7 +25,7 @@
         <button type="submit" class="btn btn-success"  data-toggle="tooltip" title="Adicionar"/>Adicionar</button>
         <!-- <input type="submit" value="Incluir"> -->
         
-        <button class="btn btn-default"/><a href="indexPet.php">Voltar</a></button>
+        <button class="btn btn-default"/><a href="index.php">Voltar</a></button>
       </form>   
       <hr/>
     </div>

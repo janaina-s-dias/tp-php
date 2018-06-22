@@ -48,11 +48,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="indexGet.php">sospet</a>
+      <a class="navbar-brand" href="index.php">sospet</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.php">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="create.php">Clientes</a></li>
         <li><a href="createPet.php">Pets</a></li>
         <li><a href="createServ.php">Serviços</a></li>
