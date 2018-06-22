@@ -17,7 +17,7 @@
 	}
 	else
 	{
-		include_once("conexao.php");
+		//include_once("conexao.php");
 		$con=abreConexao();
 		$ps=mysqli_prepare($con,"INSERT INTO pet VALUES(?,?,?,?,?,?,?)");
 		mysqli_stmt_bind_param($ps,"issssis",$id,$nm,$ra,$pe,$se,$ida,$do);

@@ -35,7 +35,7 @@
 <?php include("indexPet.php"); ?>
 <center>
 <table border="1">
-      <tr><td>Nome</td><td>Raça</td><td>Peso</td><td>Idade</td><td>Sexo</td><td colspan="2">Ações</td></tr>
+    <tr><td>ID</td><td>Nome</td><td>Raça</td><td>Peso</td><td>Idade</td><td>Sexo</td><td colspan="2">Ações</td></tr>
         <?php
           foreach($dados as $i=>$v) {
             echo "<tr>";

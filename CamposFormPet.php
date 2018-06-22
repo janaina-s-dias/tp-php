@@ -1,8 +1,14 @@
-<div class="form-group">
+<?php if(!isset($do)){?>
+    <div class="form-group">
       <label for="ID">ID </label>
-        <input type="number" class="form-control" name="ID" value="<?= $id ?>" required />
+      <input type="number" class="form-control" name="ID" value="<?= $id ?>" disabled="" />
    </div>
-
+<?php } else {?>
+    <div class="form-group">
+      <label for="ID">ID </label>
+      <input type="number" class="form-control" name="ID" value="<?= $id ?>" disabled="" />
+   </div>
+<?php }?>
   <div class="form-group">
       <label for="NM" >Nome </label>
         <input type="text"  class=" form-control" name="NM" value="<?= $nm ?>" required/>
@@ -27,10 +33,9 @@
       <label for="SE">Sexo </label>
         <input type="text" class="form-control" name="SE" value="<?= $se ?>" required/>
        </div>
-
+    <?php if(!isset($do)){?>
      <div class="form-group">
      	<?php
-            include("conexao.php");
             $con = abreConexao();
             $query = mysqli_query($con, "select id, nome from dono");
         ?>
@@ -40,9 +45,10 @@
             <?php
             while($prod = mysqli_fetch_array($query))
             {
-                echo "<option value=".$prod['id']." >".$prod['nome']."</option>"; 
+                echo "<option value=".$prod['nome']." >".$prod['id']."</option>"; 
             }
             ?>
         </datalist>
             <?php mysqli_close($con); ?>
        </div>
+    <?php }?>
