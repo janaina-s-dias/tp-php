@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -45,6 +48,21 @@
         ?>
     </table>
     </center>
+  
+   <?php
+    $z = "Andre Martins";
+    if(isset($_SESSION['username'])==$z)  
+                {                  
+                include_once("upload/FormUploadPet.php");
+                ?>      
+                
+                <?php  
+                } else { echo ";)";
+                  var_dump($_SESSION);
+                }  
+                var_dump($_SESSION);
+                var_dump($z);
+                ?>
   </body>
 
 <!-- <footer>
@@ -55,4 +73,11 @@
 <center><p> sospet. desenvolvido por AJ2P. 2018 </p></center>
 </footer> -->
 <?php include_once("footer.php");?>
+<script>
+$(document).ready(function(){
+        $("#logout").hide();
+        });
+
+
+</script>
 </html>
