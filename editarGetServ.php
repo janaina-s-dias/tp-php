@@ -14,15 +14,9 @@
       <center><h1>Editar</h1></center>
      
     <form action="editar.php" method="post">
-      <?php include("CamposForm.php"); ?>
-<<<<<<< HEAD
-      <!-- <input type="submit" name="Alterar"> -->
-      <button type="submit" class="btn btn-info"  data-toggle="tooltip" title="Alterar"/>Alterar</button>
-      <button class="btn btn-default"/><a href="index.php">Voltar</a></button>
-=======
+      <?php include("CamposFormServ.php"); ?>
       <input type="submit" name="Alterar">
-      <a href="create.php">Voltar</a>
->>>>>>> 5d710ea0b4d4000b59637ef86a1ad8edd0c63a98
+      <a href="indexServico.php">Voltar</a>
     </form>
     </div>
   </div>

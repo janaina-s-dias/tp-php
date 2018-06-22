@@ -17,7 +17,8 @@
       <?php include("CamposFormPet.php"); ?>
       <button type="submit" class="btn btn-info"  data-toggle="tooltip" title="Alterar"/>Alterar</button>
       <button class="btn btn-default"/><a href="index.php">Voltar</a></button>
-
+      <!-- <!-- <input type="submit" name="Incluir">
+      <a href="indexPet.php">Voltar</a>  -->
     </form>
     </div>
   </div>
