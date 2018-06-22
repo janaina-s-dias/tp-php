@@ -1,3 +1,8 @@
+<?php   
+ session_start();
+ 
+ ?>  
+
 <?php
   include("conexao.php");
   if (!$con=abreConexao()) {

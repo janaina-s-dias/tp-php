@@ -1,3 +1,8 @@
+<?php   
+ session_start();
+ 
+ ?>  
+
 <?php
   if ($_SERVER["REQUEST_METHOD"]=="GET") {
   	$id="";$nm="";$ra="";$pe="";$se="";$ida="";$do="";
