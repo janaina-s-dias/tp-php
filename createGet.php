@@ -24,7 +24,7 @@
         <button type="submit" class="btn btn-success"  data-toggle="tooltip" title="Adicionar"/>Adicionar</button>
         <!-- <input type="submit" value="Incluir"> -->
         
-        <button class="btn btn-default"/><a href="indexGet.php">Voltar</a></button>
+        <button class="btn btn-default"/><a href="index.php">Voltar</a></button>
       
       </form>
       <hr/>   
