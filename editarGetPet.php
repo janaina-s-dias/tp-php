@@ -15,19 +15,13 @@
      
     <form action="editarPet.php" method="post">
       <?php include("CamposFormPet.php"); ?>
-      <input type="submit" name="Incluir">
-      <a href="index.php">Voltar</a>
+      <button type="submit" class="btn btn-info"  data-toggle="tooltip" title="Alterar"/>Alterar</button>
+      <button class="btn btn-default"/><a href="index.php">Voltar</a></button>
+
     </form>
     </div>
   </div>
 </div>
 </body>
-<!-- <footer>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<center><p> sospet. desenvolvido por AJ2P. 2018 </p></center>
-</footer> -->
 <?php include_once("footer.php");?>
 </html>

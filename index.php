@@ -15,10 +15,6 @@
     
       <!-- Centro -->
     <div class="col-sm-12 text-left"> 
-      <center><h1>sospet</h1></center>
- 
-    <!-- <a href="/crud/create.php">Criar</a> -->
-    <!-- <br/><br/> --> 
     <?php  
                 if(isset($_SESSION['username']))  
                 {  
@@ -28,7 +24,7 @@
                       
                 </div>  
                 <?php  
-                } else { echo "<h1>Faça o Login!!<h1/>";
+                } else { echo "<center><h1>Efetue o login.</h1></center>";
                 }  
                 ?>  
      
