@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>CRUD</title>
+    <title>Sistema SOS PET</title>
   </head>
   <body>
     <h1>Editar</h1>

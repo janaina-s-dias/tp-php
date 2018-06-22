@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>CRUD</title>
+    <title>Sistema SOS PET</title>
   </head>
   <?php include("cabecalho.php"); ?>
 <div class="container-fluid text-center">    
@@ -22,11 +22,5 @@
   </div>
 </div>
 </body>
-<footer>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<center><p> sospet. desenvolvido por AJ2P. 2018 </p></center>
-</footer>
+<?php include_once("footer.php");?>
 </html>

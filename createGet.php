@@ -29,7 +29,7 @@ session_start();
         <button type="submit" class="btn btn-success"  data-toggle="tooltip" title="Adicionar"/>Adicionar</button>
         <!-- <input type="submit" value="Incluir"> -->
         
-        <button class="btn btn-default"/><a href="indexGet.php">Voltar</a></button>
+        <button class="btn btn-default"/><a href="index.php">Voltar</a></button>
       
       </form>
       <hr/>   
@@ -40,16 +40,21 @@ session_start();
 </body>
 <?php include_once("indexGet.php");?>
 <center>
-<table border="1">
+<table class="table-bordered">
+  <thead style="text-align: center; font-weight: bold">
     <tr><td>ID</td><td>Nome</td><td>CPF</td><td>Endereço</td><td>Telefone</td><td>Celular</td><td colspan="2">Ações</td></tr>
+    </thead>
+    <tbody style="text-align: center">
         <?php
           foreach($dados as $i=>$v) {
             echo "<tr>";
             foreach ($v as $i2 => $v2) {
               echo "<td>$v2</td>";
             }
-            echo "<td><a href='editar.php?id={$v[0]}'>Editar</a></td>";
-            echo "<td><a href='delete.php?id={$v[0]}'>Excluir</a></td>";
+            
+
+            echo "<td><button class='btn btn-info'/><a style='color:black; text-decoration:none;' href='editar.php?id={$v[0]}'>Editar</a></button></td>";
+            echo "<td><button class='btn btn-danger'/><a style='color:black; text-decoration:none;' href='delete.php?id={$v[0]}'>Excluir</a></button></td></td>";
             echo "<tr>";
           }
         ?>

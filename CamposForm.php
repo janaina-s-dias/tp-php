@@ -1,8 +1,11 @@
 <div class="form-group">
-      <label for="ID">ID</label>
-        <input type="number" class="form-control" name="ID" value="<?php echo($id)?>" required />
-  </div>
-
+    <label for="ID">ID</label>
+<?php if(isset($id) && $id > 0){
+    echo "<input type='number' class='form-control' name='ID' value='".$id."' disabled />";
+} else {
+    echo "<input type='number' class='form-control' name='ID' value='".$id."' required />";
+}?>
+</div>
  <div class="form-group">
       <label for="NM">Nome</label>
         <input type="text" class="form-control" name="NM" value="<?php echo($nm)?>" required />

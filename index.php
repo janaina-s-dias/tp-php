@@ -6,7 +6,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8">
-    <title>CRUD</title>
+    <title>Sistema SOS PET</title>
   </head>
   <?php include("cabecalho.php"); ?>
   <body>
@@ -15,20 +15,16 @@
     
       <!-- Centro -->
     <div class="col-sm-12 text-left"> 
-      <center><h1>sospet</h1></center>
- 
-    <!-- <a href="/crud/create.php">Criar</a> -->
-    <!-- <br/><br/> --> 
     <?php  
                 if(isset($_SESSION['username']))  
                 {  
                 ?>  
                 <div align="center">  
                         <h1>Welcome - <?php echo $_SESSION['username']; ?></h1><br />  
-                      
+
                 </div>  
                 <?php  
-                } else { echo "<h1>Faça o Login!!<h1/>";
+                } else { echo "<center><h1>Efetue o login.</h1></center>";
                 }  
                 ?>  
      
@@ -38,13 +34,7 @@
   </div>
 </div>
 </body>
-<footer>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<center><p> sospet. desenvolvido por AJ2P. 2018 </p></center>
-</footer>
+<?php include_once("footer.php");?>
 </html>
 
 

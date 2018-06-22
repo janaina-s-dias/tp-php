@@ -18,12 +18,12 @@
     include_once("erro.php"); // página de erro
   } else {
     $dados = array(); // armazena dados de 10 alunos recuperados do bando de dados
-    $ps=mysqli_prepare($con,"select nome, raca, peso, idade, sexo from pet limit ?,?"); // prepara e envia comando ao banco de dados. O parâmetros (?) indicam, respectivamente, o primeiro registo a ser recuperado e a quantidade de registros.
+    $ps=mysqli_prepare($con,"select id, nome, raca, peso, idade, sexo from pet limit ?,?"); // prepara e envia comando ao banco de dados. O parâmetros (?) indicam, respectivamente, o primeiro registo a ser recuperado e a quantidade de registros.
     mysqli_stmt_bind_param($ps, "ii", $inicioPagina,$tamanhoPagina);
     mysqli_stmt_execute($ps); // executa comando SELECT
-    mysqli_stmt_bind_result($ps,$nm,$ra,$pe,$ida,$se); // associa variáveis às colunas resultantes do SELECT.
+    mysqli_stmt_bind_result($ps,$id,$nm,$ra,$pe,$ida,$se); // associa variáveis às colunas resultantes do SELECT.
     while (mysqli_stmt_fetch($ps)) { 
-        array_push($dados, [$nm, $ra, $pe, $ida, $se]);
+        array_push($dados, [$id,$nm, $ra, $pe, $ida, $se]);
     }
     }
 ?>

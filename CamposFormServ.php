@@ -1,11 +1,11 @@
-   
-   <div class="form-group">
-      <label for="ID">ID</label>
-        <input type="number" class="form-control"  name="ID" value="<?= $id ?>" required />
-       
-      </div>
-
-      <div class="form-group">
+<div class="form-group">
+    <label for="ID">ID </label>
+<?php if(isset($id) && $id > 0){?>
+        <input type="number" class="form-control" name="ID" value="<?= $id ?>" disabled />
+<?php } else {?>
+        <input type="number" class="form-control" name="ID" value="<?= $id ?>" required />
+<?php }?>
+</div>      <div class="form-group">
       <label for="DA">Data</label>
       <?php 
         date_default_timezone_set('America/Sao_Paulo');
@@ -24,13 +24,14 @@
       <div class="form-group">
       <label for="TIPO">Tipo Consulta</label>
         <input type="text"  class="form-control"name="TIPO" value="<?= $tipo ?>" required/>
-      
+<?php if($cao < 1){?>     
         <div class="form-group">
             <?php
             include("conexao.php");
             $con = abreConexao();
             $query = mysqli_query($con, "select id, nome from pet");
             ?>
+    
       <label for="CAO">Cão</label>
         <input list="pet" class="form-control" name="CAO" value="<?= $cao ?>" required/>
         <datalist id="pet">CAO
@@ -42,5 +43,5 @@
             ?>
         </datalist>
             <?php mysqli_close($con); ?>
-       
+    <?php }?>
       </div>
