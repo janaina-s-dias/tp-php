@@ -38,8 +38,8 @@
             foreach ($v as $i2 => $v2) {
               echo "<td>$v2</td>";
             }
-            echo "<td><a href='/crud/editarServ.php?id={$v[0]}'>Editar</a></td>";
-            echo "<td><a href='/crud/deleteServ.php?id={$v[0]}'>Excluir</a></td>";
+            echo "<td><a href='editarServ.php?id={$v[0]}'>Editar</a></td>";
+            echo "<td><a href='deleteServ.php?id={$v[0]}'>Excluir</a></td>";
             echo "<tr>";
           }
         ?>

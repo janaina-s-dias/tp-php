@@ -42,8 +42,8 @@
             foreach ($v as $i2 => $v2) {
               echo "<td>$v2</td>";
             }
-            echo "<td><a href='/crud/editarPet.php?id={$v[0]}'>Editar</a></td>";
-            echo "<td><a href='/crud/deletePet.php?id={$v[0]}'>Excluir</a></td>";
+            echo "<td><a href='editarPet.php?id={$v[0]}'>Editar</a></td>";
+            echo "<td><a href='deletePet.php?id={$v[0]}'>Excluir</a></td>";
             echo "<tr>";
           }
         ?>

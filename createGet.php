@@ -33,18 +33,18 @@
   </div>
 </div>
 </body>
-<?php include_once("index.php");?>
+<?php include_once("indexGet.php");?>
 <center>
 <table border="1">
-      <tr><td>Nome</td><td>CPF</td><td>Endereço</td><td>Telefone</td><td>Celular</td><td colspan="2">Ações</td></tr>
+    <tr><td>ID</td><td>Nome</td><td>CPF</td><td>Endereço</td><td>Telefone</td><td>Celular</td><td colspan="2">Ações</td></tr>
         <?php
           foreach($dados as $i=>$v) {
             echo "<tr>";
             foreach ($v as $i2 => $v2) {
               echo "<td>$v2</td>";
             }
-            echo "<td><a href='/crud/editar.php?id={$v[0]}'>Editar</a></td>";
-            echo "<td><a href='/crud/delete.php?id={$v[0]}'>Excluir</a></td>";
+            echo "<td><a href='editar.php?id={$v[0]}'>Editar</a></td>";
+            echo "<td><a href='delete.php?id={$v[0]}'>Excluir</a></td>";
             echo "<tr>";
           }
         ?>
