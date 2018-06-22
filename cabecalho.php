@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>sospet</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
   <link rel="shortcut icon" href="img/animal-prints (1).png"/>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
@@ -26,9 +22,9 @@
     }
     
     /* Set black background color, white text and some padding */
-    footer, body {
+    footer {
 		font-family:Tahoma, Geneva, sans-serif;
-     /* background-color: #555;
+      /*background-color: #555;
       color: white;
       padding: 15px;*/
     }
@@ -43,9 +39,7 @@
     }
   </style>
 </head>
-<body>
 
-<!-- Cabeçalho -->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -54,47 +48,26 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="home.html">sospet</a>
+      <a class="navbar-brand" href="indexGet.php">sospet</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="home.html">Home</a></li>
-        <li><a href="#">Perfil</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
+        <li class="active"><a href="indexGet.php">Home</a></li>
+        <li><a href="create.php">Clientes</a></li>
+        <li><a href="createPet.php">Pets</a></li>
+        <li><a href="createServ.php">Serviços</a></li>
+        <li><a href="sobre.php">Sobre</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
-       <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#myModal">ENTRAR</button>
+        <?php  
+if(isset($_SESSION['username'])){
+  	?>
+        <button type="button" name="logout" id="logout" class="btn btn-success btn-md" data-toggle="modal" data-target="#loginModal">SAIR</button>
+    <?php  } else { ?>
+        <button type="button" name="login" id="login" class="btn btn-success btn-md" data-toggle="modal" data-target="#loginModal">ENTRAR</button>
+ <?php  } ?>
       </ul>
     </div>
   </div>
 </nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-  
- 
-    
-      <!-- Centro -->
-    <div class="col-sm-12 text-left"> 
-      <center><h1>Serviços</h1></center>
-     
-      <hr>
-       
-    </div>
-    
- 
-  </div>
-</div>
-
-<footer>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<center><p> sospet. desenvolvido por AJ2P. 2018 </p></center>
-</footer>
-
-</body>
-</html>
