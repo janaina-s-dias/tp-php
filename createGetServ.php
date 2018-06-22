@@ -15,14 +15,8 @@
       <hr>  
       <form action="createServ.php" method="post">
         <?php include("CamposFormServ.php"); ?>
-
-
         <button type="submit" class="btn btn-success"  data-toggle="tooltip" title="Adicionar"/>Adicionar</button>
-        <!-- <input type="submit" value="Incluir"> -->
-        
         <button class="btn btn-default"/><a href="index.php">Voltar</a></button>
-        <!-- <input type="submit" value="Incluir">
-        <a href="index.php">Voltar</a> -->
       </form>   
       <hr/>
     </div>
@@ -31,28 +25,25 @@
 <?php include_once("indexServico.php");?>
 <center>
 <table border="1">
+<thead style="text-align: center; font-weight: bold">
     <tr><td>ID</td><td>Data</td><td>Hora</td><td>Tipo</td><td colspan="2">Ações</td></tr>
+    </thead>
+    <tbody style="text-align: center">
         <?php
           foreach($dados as $i=>$v) {
             echo "<tr>";
             foreach ($v as $i2 => $v2) {
               echo "<td>$v2</td>";
             }
-            echo "<td><a href='editarServ.php?id={$v[0]}'>Editar</a></td>";
-            echo "<td><a href='deleteServ.php?id={$v[0]}'>Excluir</a></td>";
+             
+            echo "<td><button class='btn btn-info'/><a style='color:black; text-decoration:none;' href='editarServ.php?id={$v[0]}'>Editar</a></button></td>";
+            echo "<td><button class='btn btn-danger'/><a style='color:black; text-decoration:none;' href='deleteServ.php?id={$v[0]}'>Excluir</a></button></td></td>";
             echo "<tr>";
           }
         ?>
+         </tbody>
     </table>
     </center>
   </body>
-
-<!-- <footer>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<center><p> sospet. desenvolvido por AJ2P. 2018 </p></center>
-</footer> -->
 <?php include_once("footer.php");?>
 </html>

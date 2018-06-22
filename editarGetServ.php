@@ -15,8 +15,10 @@
      
     <form action="editar.php" method="post">
       <?php include("CamposFormServ.php"); ?>
-      <input type="submit" name="Alterar">
-      <a href="indexServico.php">Voltar</a>
+      <!-- <input type="submit" name="Alterar">
+      <a href="indexServico.php">Voltar</a> -->
+      <button type="submit" class="btn btn-info"  data-toggle="tooltip" title="Alterar"/>Alterar</button>
+      <button class="btn btn-default"/><a href="index.php">Voltar</a></button>
     </form>
     </div>
   </div>
