@@ -1,4 +1,5 @@
 <?php
+include("conexao.php");
   $erro = array();
   if ($_FILES) { // Se $_FILES diferente de vazio, equivale a true
 

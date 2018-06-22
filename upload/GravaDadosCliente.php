@@ -1,4 +1,5 @@
 <?php
+include("conexao.php");
   $erro = array();
   if ($_FILES) { // Se $_FILES diferente de vazio, equivale a true
 
@@ -10,6 +11,7 @@
     $ps=mysqli_prepare($con,"insert into dono values(?,?,?,?,?,?)"); // Preparação
     // Liga variáveis aos parâmetros do Insert (ou seja, as ?)
     //mysqli_stmt_bind_param($ps,"isssss",$ID,$MN,$ED,$TELEFONE);
+    
     mysqli_stmt_bind_param($ps,"isssss",$id,$nm,$cpf,$ed,$te,$ce);
 
     /* Copia arquivo

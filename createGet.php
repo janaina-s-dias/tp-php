@@ -40,24 +40,24 @@ session_start();
 </body>
 <?php include_once("indexGet.php");?>
 <center>
-<table class="table-bordered">
-  <thead style="text-align: center; font-weight: bold">
-    <tr><td>ID</td><td>Nome</td><td>CPF</td><td>Endereço</td><td>Telefone</td><td>Celular</td><td colspan="2">Ações</td></tr>
-    </thead>
-    <tbody style="text-align: center">
-        <?php
-          foreach($dados as $i=>$v) {
-            echo "<tr>";
-            foreach ($v as $i2 => $v2) {
-              echo "<td>$v2</td>";
-            }
-            
+    <table class="table-bordered">
+        <thead style="text-align: center; font-weight: bold">
+            <tr><td>ID</td><td>Nome</td><td>CPF</td><td>Endereço</td><td>Telefone</td><td>Celular</td><td colspan="2">Ações</td></tr>
+        </thead>
+        <tbody style="text-align: center">
+            <?php
+            foreach ($dados as $i => $v) {
+                echo "<tr>";
+                foreach ($v as $i2 => $v2) {
+                    echo "<td>$v2</td>";
+                }
 
-            echo "<td><button class='btn btn-info'/><a style='color:black; text-decoration:none;' href='editar.php?id={$v[0]}'>Editar</a></button></td>";
-            echo "<td><button class='btn btn-danger'/><a style='color:black; text-decoration:none;' href='delete.php?id={$v[0]}'>Excluir</a></button></td></td>";
-            echo "<tr>";
-          }
-        ?>
+
+                echo "<td><button class='btn btn-info'/><a style='color:black; text-decoration:none;' href='editar.php?id={$v[0]}'>Editar</a></button></td>";
+                echo "<td><button class='btn btn-danger'/><a style='color:black; text-decoration:none;' href='delete.php?id={$v[0]}'>Excluir</a></button></td></td>";
+                echo "<tr>";
+            }
+            ?>
     </table>        
     </center>
 <hr>
@@ -75,6 +75,9 @@ session_start();
                 }  
                 var_dump($_SESSION);
                 var_dump($z);
+                var_dump($_SERVER);
+                echo "---------------------------------";
+                print_r($_SERVER);
                 ?>
                 
     <?php include_once("footer.php");?>
