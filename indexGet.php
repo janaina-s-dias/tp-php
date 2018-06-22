@@ -1,3 +1,5 @@
+
+
 <?php
 /* Neste arquivo está o código PHP que busca no banco dados sobre os alunos cadastrados. É usado o recurso de paginação com qunatidade de linas conforme $tamanhoPagina. Todo o código HTML fica em outro arquivo (indexGet.php), separando assim a apresentação do processamento dos dados. Para executar, criar o banco de dados ESCOLA e a tabela CREATE TABLE ALUNO(ID INT NOT NULL PRIMARY KEY, NOME VARCHAR(100) NOT NULL, ENDERECO VARCHAR(100) NOT NULL) */
 
