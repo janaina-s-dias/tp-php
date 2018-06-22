@@ -20,13 +20,13 @@
     include_once("erro.php"); // página de erro
   } else {
     $dados = array(); // armazena dados de 10 alunos recuperados do bando de dados
-    $ps=mysqli_prepare($con,"select data, hora, tipoconsulta from servicos limit ?,?"); // prepara e envia comando ao banco de dados. O parâmetros (?) indicam, 
+    $ps=mysqli_prepare($con,"select id, data, hora, tipoconsulta from servicos limit ?,?"); // prepara e envia comando ao banco de dados. O parâmetros (?) indicam, 
     //respectivamente, o primeiro registo a ser recuperado e a quantidade de registros.
     mysqli_stmt_bind_param($ps,"ii",$inicioPagina,$tamanhoPagina);
     mysqli_stmt_execute($ps); // executa comando SELECT
-    mysqli_stmt_bind_result($ps, $dt, $tm, $tc); // associa variáveis às colunas resultantes do SELECT.
+    mysqli_stmt_bind_result($ps,$id, $dt, $tm, $tc); // associa variáveis às colunas resultantes do SELECT.
     while(mysqli_stmt_fetch($ps)) // obtém 1 linha do resultado do SELECT, retorna FALSE quando não existirem mais linhas.
     
-      array_push($dados,array($dt, $tm, $tc)); // inclui linha no vetor, que será usado em indexGet.php
+      array_push($dados,array($id, $dt, $tm, $tc)); // inclui linha no vetor, que será usado em indexGet.php
     }
 ?>

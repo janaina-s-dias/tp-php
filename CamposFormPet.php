@@ -30,12 +30,13 @@
       <label for="SE">Sexo </label>
         <input type="text" class="form-control" name="SE" value="<?= $se ?>" required/>
        </div>
-    <?php if(!isset($do)){?>
+    <?php if($do < 1){?>
      <div class="form-group">
      	<?php
-            $con = abreConexao();
+            if(!isset($con))include("conexao.php");
+            if(!isset($con)) $con = abreConexao();
             $query = mysqli_query($con, "select id, nome from dono");
-        ?>
+        ?> 
       <label for="DO">Dono </label>
         <input list="donos" class="form-control" name="DO" required/>
         <datalist id="donos">

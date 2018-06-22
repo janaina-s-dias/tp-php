@@ -14,9 +14,9 @@
       <center><h1>Editar</h1></center>
      
     <form action="editar.php" method="post">
-      <?php include("CamposForm.php"); ?>
+      <?php include("CamposFormServ.php"); ?>
       <input type="submit" name="Alterar">
-      <a href="create.php">Voltar</a>
+      <a href="indexServico.php">Voltar</a>
     </form>
     </div>
   </div>

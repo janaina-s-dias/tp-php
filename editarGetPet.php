@@ -16,7 +16,7 @@
     <form action="editarPet.php" method="post">
       <?php include("CamposFormPet.php"); ?>
       <input type="submit" name="Incluir">
-      <a href="index.php">Voltar</a>
+      <a href="indexPet.php">Voltar</a>
     </form>
     </div>
   </div>

@@ -31,7 +31,7 @@
 <?php include_once("indexServico.php");?>
 <center>
 <table border="1">
-      <tr><td>ID</td><td>Data</td><td>Hora</td><td>Tipo</td><td>Cao</td></tr>
+    <tr><td>ID</td><td>Data</td><td>Hora</td><td>Tipo</td><td colspan="2">Ações</td></tr>
         <?php
           foreach($dados as $i=>$v) {
             echo "<tr>";

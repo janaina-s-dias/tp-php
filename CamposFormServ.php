@@ -24,13 +24,14 @@
       <div class="form-group">
       <label for="TIPO">Tipo Consulta</label>
         <input type="text"  class="form-control"name="TIPO" value="<?= $tipo ?>" required/>
-      
+<?php if($cao < 1){?>     
         <div class="form-group">
             <?php
             include("conexao.php");
             $con = abreConexao();
             $query = mysqli_query($con, "select id, nome from pet");
             ?>
+    
       <label for="CAO">Cão</label>
         <input list="pet" class="form-control" name="CAO" value="<?= $cao ?>" required/>
         <datalist id="pet">CAO
@@ -42,5 +43,5 @@
             ?>
         </datalist>
             <?php mysqli_close($con); ?>
-       
+    <?php }?>
       </div>
