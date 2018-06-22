@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
-    <title>CRUD</title>
+    <title>Sistema SOS PET</title>
   </head> 
   <?php include("cabecalho.php"); ?>
   <body>
