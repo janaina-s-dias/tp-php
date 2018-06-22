@@ -21,7 +21,7 @@
                 ?>  
                 <div align="center">  
                         <h1>Welcome - <?php echo $_SESSION['username']; ?></h1><br />  
-                      
+
                 </div>  
                 <?php  
                 } else { echo "<center><h1>Efetue o login.</h1></center>";
@@ -34,13 +34,6 @@
   </div>
 </div>
 </body>
-<!-- <footer>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<center><p> sospet. desenvolvido por AJ2P. 2018 </p></center>
-</footer> -->
 <?php include_once("footer.php");?>
 </html>
 
