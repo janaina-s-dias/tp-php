@@ -12,7 +12,6 @@
       <!-- Centro -->
     <div class="col-sm-12 text-left"> 
       <center><h1>Pets</h1></center>
-      
        
       <hr>  
       

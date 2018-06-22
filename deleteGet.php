@@ -22,11 +22,5 @@
   </div>
 </div>
 </body>
-<footer>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<center><p> sospet. desenvolvido por AJ2P. 2018 </p></center>
-</footer>
+<?php include_once("footer.php");?>
 </html>
