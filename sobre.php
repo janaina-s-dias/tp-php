@@ -65,7 +65,7 @@
     <div class="col-sm-12 text-left"> 
       <center><h1>Sobre</h1></center>
       <hr>
-       TODO: Colocar a API do Google Maps aqui
+       <center><h3>Onde nos encontrar?</h3></center>
 
 
   <div id="map"></div>
@@ -92,14 +92,7 @@
  
   </div>
 </div>
-
-<footer>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<br/><br/><br/><br/>
-<center><p> sospet. desenvolvido por AJ2P. 2018 </p></center>
-</footer>
+<?php include_once("footer.php");?>
 
 </body>
 <script>

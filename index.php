@@ -20,14 +20,55 @@
                 {  
                 ?>  
                 <div align="center">  
-                        <h1>Welcome - <?php echo $_SESSION['username']; ?></h1><br />  
+                        <h1>Welcome - <?php echo $_SESSION['username']; ?></h1><br />
 
                 </div>  
                 <?php  
                 } else { echo "<center><h1>Efetue o login.</h1></center>";
                 }  
                 ?>  
-     
+                
+                <!-- Carousel -->
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                  <center><img src="img/pets1.jpg" alt="Pets" width="1200" height="800"></center>
+                  </div>
+
+                  <div class="item">
+                  <center><img src="img/passaros.jpg" alt="Passaros" width="1200" height="800"></center>
+                  </div>
+
+                  <div class="item">
+                    <center><img src="img/petnerd.jpg" alt="Pet Nerd" width="1200" height="800"></center>
+                  </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+
+ <!-- Carousel -->
+ <br/> <br/> <br/>
+
+              <center><p><b>O Gerencie sua loja com o SOSPET, para mais informações acesse: www.esite.com</p></b></center>
     
       
     </div>
