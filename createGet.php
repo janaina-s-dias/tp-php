@@ -40,7 +40,7 @@ session_start();
 </body>
 <?php include_once("indexGet.php");?>
 <center>
-    <table class="table-bordered">
+    <table class="table-bordered table-hover">
         <thead style="text-align: center; font-weight: bold">
             <tr><td>ID</td><td>Nome</td><td>CPF</td><td>Endereço</td><td>Telefone</td><td>Celular</td><td colspan="2">Ações</td></tr>
         </thead>
