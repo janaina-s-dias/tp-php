@@ -51,18 +51,19 @@ include("conexao.php");
     }
   }
 ?>
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt_BR">
   <head>
     <title>Upload</title>  
   </head>
   <body>
-    <h3>-->
+    <h3>
       <?php
         foreach($erro as $i=>$v) {
           echo $v."<br/>";
         }
       ?>
- <!--   </h3>
+   </h3>
+      <p><a href="http://localhost/tp-php/createPet.php">Voltar</a></p>
   </body>
-</html>-->
+</html>
