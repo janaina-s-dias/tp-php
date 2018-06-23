@@ -10,8 +10,6 @@ include("conexao.php");
     $con = abreConexao(); // Conexão
     $ps=mysqli_prepare($con,"insert into dono values(?,?,?,?,?,?)"); // Preparação
     // Liga variáveis aos parâmetros do Insert (ou seja, as ?)
-    //mysqli_stmt_bind_param($ps,"isssss",$ID,$MN,$ED,$TELEFONE);
-    
     mysqli_stmt_bind_param($ps,"isssss",$id,$nm,$cpf,$ed,$te,$ce);
 
     /* Copia arquivo
@@ -35,6 +33,7 @@ include("conexao.php");
         while($lin!=null) {
           // Atribui valores às vriáveis ligadas ao Insert preparado 
           //mysqli_stmt_bind_param($ps,"isssss",$id,$nm,$cpf,$ed,$te,$ce);
+          //$teste = 0;
           $id = $lin[0];
           $nm = $lin[1];
           $cpf = $lin[2];
