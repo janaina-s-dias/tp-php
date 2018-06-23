@@ -59,10 +59,9 @@ session_start();
                 
                 <?php  
                 } else { echo ";)";
-                  var_dump($_SESSION);
+                  
                 }  
-                var_dump($_SESSION);
-                var_dump($z);
+               
                 ?>
     
 <!-- <footer>

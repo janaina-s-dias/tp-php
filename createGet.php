@@ -71,13 +71,11 @@ session_start();
                 
                 <?php  
                 } else { echo ";)";
-                  var_dump($_SESSION);
+                  
                 }  
-                var_dump($_SESSION);
-                var_dump($z);
-                var_dump($_SERVER);
+               
                 echo "---------------------------------";
-                print_r($_SERVER);
+            
                 ?>
                 
     <?php include_once("footer.php");?>
