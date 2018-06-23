@@ -102,4 +102,11 @@
 </footer>
 
 </body>
+<script>
+$(document).ready(function(){
+        $("#logout").hide();
+        });
+
+
+</script>
 </html>
