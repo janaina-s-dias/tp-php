@@ -7,7 +7,7 @@
   <body>
   <center>
     <h1> <?php echo $MensagemErro; ?></h1>
-    <button class="btn btn-default"/><a href="indexGet.php">Voltar</a></button>
+    <button class="btn btn-default"/><a href="index.php">Voltar</a></button>
     </center>
   </body>
 </html>
